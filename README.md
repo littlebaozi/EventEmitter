@@ -1,7 +1,7 @@
 # 简略的发布订阅实现
 
 ## EventEmitter.js
-用了不要es6的语法
+用了不少es6的语法
 
 ## eventBus.js
 给微信小程序用的。“借鉴”了[微信小程序跨页面通信解决思路](https://aotu.io/notes/2017/01/19/wxapp-event/)这篇文章
