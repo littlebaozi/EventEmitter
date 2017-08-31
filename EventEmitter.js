@@ -9,12 +9,12 @@ class EventEmitter {
         throw new Error('fn must be a function')
         return
       }
-     if(event in this.events){  // this.events.hasOwnProperty(event)
+   /*   if(event in this.events){  // this.events.hasOwnProperty(event)
         this.events[event].push(fn)
       }else{
         this.events[event] = [fn]
-      }
-     
+      } */
+      (this.events.hasOwnProperty(event)? this.events[event] : this.events[event]=[]).push(fn)
     }
     
     emit(event,...args) {
